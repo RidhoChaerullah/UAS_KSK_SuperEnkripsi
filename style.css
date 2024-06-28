@@ -1,0 +1,77 @@
+body {
+    background: #E5E0FF;
+    /* Warna latar belakang */
+    color: #343a40;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #FFF2F2;
+    /* Warna latar belakang container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #7286D3;
+    /* Warna judul utama */
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #7286D3;
+    /* Warna sub-judul */
+    margin-bottom: 20px;
+}
+
+.result-container {
+    margin-top: 20px;
+}
+
+.result {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: #E5E0FF;
+    /* Warna latar belakang hasil */
+}
+
+.result-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #E5E0FF;
+    /* Warna latar belakang item hasil */
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #7286D3;
+    /* Warna tombol utama */
+    border-color: #7286D3;
+}
+
+.btn-primary:hover {
+    background-color: #8EA7E9;
+    /* Warna tombol saat di-hover */
+    border-color: #8EA7E9;
+}
+
+.form-control {
+    background-color: #FFF2F2;
+    /* Warna latar belakang input */
+    border: 1px solid #ced4da;
+    color: #343a40;
+}
+
+.form-control:focus {
+    background-color: #FFF2F2;
+    border-color: #7286D3;
+    /* Warna border saat input di-focus */
+    box-shadow: none;
+    color: #343a40;
+}

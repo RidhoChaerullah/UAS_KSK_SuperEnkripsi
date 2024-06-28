@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Enkripsi - Mod 26</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Aplikasi Super Enkripsi - Mod 26</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Enkripsi</h2>
+        <form id="inputplaintext" class="mb-4">
+          <div class="form-group">
+            <input type="text" id="inputPlaintextUser" class="form-control" placeholder="Masukkan plaintext" required>
+          </div>
+          <div class="form-group">
+            <input type="number" id="caesarShift" class="form-control"
+              placeholder="Masukkan kunci Caesar Cipher (angka max 25)" required>
+          </div>
+          <div class="form-group">
+            <input type="number" id="transpositionKey" class="form-control"
+              placeholder="Masukkan kunci Transposisi (angka)" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Enkripsi</button>
+        </form>
+        <div class="result-container mb-4">
+          <h3>Hasil Enkripsi</h3>
+          <div id="enkripsiPlaintextshelfList" class="result"></div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <h2>Dekripsi</h2>
+        <form id="searchPesan" class="mb-4">
+          <div class="form-group">
+            <input type="text" id="searchPlaintextUser" class="form-control" placeholder="Masukkan ciphertext" required>
+          </div>
+          <div class="form-group">
+            <input type="number" id="caesarShiftDecrypt" class="form-control"
+              placeholder="Masukkan kunci Caesar Cipher (angka max 25)" required>
+          </div>
+          <div class="form-group">
+            <input type="number" id="transpositionKeyDecrypt" class="form-control"
+              placeholder="Masukkan kunci Transposisi (angka)" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Dekripsi</button>
+        </form>
+        <div class="result-container">
+          <h3>Hasil Dekripsi</h3>
+          <div id="dekripsiPlaintextshelfList" class="result"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
